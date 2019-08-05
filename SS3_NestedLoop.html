@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra bảng số dùng vòng lặp </title>
+</head>
+<body>
+    <script>
+        /* Sử dụng vòng lặp For lồng nhau Để in ra bảng số
+        let output="<table border='1px' cellspacing='0px' cellpadding='3px' width='400px' >";
+        let i,j;
+        for(i=1; i<11;i++){
+            output +="<tr>";
+            for(j=1;j<11;j++){
+                output +="<td>" + i*j + "</td>";
+            }
+            output +="</tr>";
+        }
+        output +="</table>";
+        document.write(output);
+
+         */
+
+        //Sử dụng vòng lặp while lồng nhau để in ra  bảng số
+        let output="<table border='1px' cellspacing='0px' cellpadding='3px' width='400px' >";
+        let i=1,j;
+        while(i < 11){
+                output +="<tr>";
+                let j=1;
+                while(j <11){
+                    output +="<td>" + i*j + "</td>";
+                    j++;
+                }
+                output +="</tr>";
+                i++;
+        }
+        output +="</table>";
+        document.write(output);
+    </script>
+</body>
+</html>
